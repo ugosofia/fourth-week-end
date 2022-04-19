@@ -19,6 +19,11 @@ public class OrderServiceImpl implements OrderService{
         return orderRepository.findById(id);
     }
 
+    @Override
+    public void delete(String id) {
+        orderRepository.deleteById(id);
+    }
+
     public List<Order> findAll() {
         return orderRepository.findAll();
     }

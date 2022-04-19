@@ -10,4 +10,6 @@ public interface ProductService {
     public List<Product> findAll();
 
     public Optional<Product> findById(String id);
+
+    public void delete(String id);
 }

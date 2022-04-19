@@ -10,4 +10,6 @@ public interface DeliveryService {
 
     public Optional<Delivery> findById(String id);
 
+    public void delete(String id);
+
 }

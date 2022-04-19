@@ -28,6 +28,12 @@ public class DeliveryController {
         return new ResponseEntity<Delivery>((Delivery) deliveryService.findById(id).get(), HttpStatus.OK);
     }
 
+    @DeleteMapping(path="/{id}")
+    ResponseEntity<Void> delete(@PathVariable String id) {
+        deliveryService.delete(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
 
 
 }

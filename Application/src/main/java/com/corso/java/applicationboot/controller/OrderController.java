@@ -28,12 +28,9 @@ public class OrderController {
         return new ResponseEntity<>(orderService.findAll(), HttpStatus.OK);
     }
 
-
-    /**
     @DeleteMapping(path="/{id}")
-    ResponseEntity<Void> deleteOne(@PathVariable String id) {
+    ResponseEntity<Void> delete(@PathVariable String id) {
         orderService.delete(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-    */
 }

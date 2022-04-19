@@ -21,6 +21,11 @@ public class DeliveryServiceImpl implements DeliveryService{
         return deliveryRepository.findById(id);
     }
 
+    @Override
+    public void delete(String id) {
+        deliveryRepository.deleteById(id);
+    }
+
     public List<Delivery> findAll() {
         return deliveryRepository.findAll();
     }

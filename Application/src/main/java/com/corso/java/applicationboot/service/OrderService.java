@@ -10,4 +10,6 @@ public interface OrderService {
     public List<Order> findAll();
 
     public Optional<Order> findById(String id);
+
+    public void delete(String id);
 }
